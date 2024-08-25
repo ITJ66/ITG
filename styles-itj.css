@@ -35,7 +35,7 @@ li {
 
 
 .markers li {
-	list-style-image: url('box3.png');
+	list-style-image: url('/box3.png');
 	padding: 0px;
 	width: 290px;
 }
