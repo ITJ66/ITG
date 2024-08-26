@@ -35,7 +35,7 @@ li {
 
 
 .markers li {
-	list-style-image: url('/box3.png');
+	list-style-image: url('box3.png');
 	padding: 0px;
 	width: 290px;
 }
@@ -99,7 +99,7 @@ p {
     bottom: 0; 
     height: 60px;
     padding-left: 29px;
-    color: #f3f2ff; 
+    color: #2BA6C7; 
     width: 97%; 
    }
 
@@ -156,7 +156,7 @@ opacity:0.5;
 .slider {
    width: 800px;
    height: 500px;
-   margin-top: 780px; /*отступ слайдера */
+   margin-top: 880px; /*отступ слайдера */
    overflow: hidden;
    border: 10px solid #cccdce;
 }
@@ -231,24 +231,6 @@ input[name="r"] {
    
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </style>
 
 
