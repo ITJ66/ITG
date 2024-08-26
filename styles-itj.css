@@ -84,51 +84,57 @@ width: 100%; /* Уменьшение ширины контейнера */
    width: 800px;
    height: 500px;
    /*margin-top: 880px; отступ слайдера */
-   overflow: hidden;
+   overflow: hidden; /*поведение, когда содержимое не помещается в поле заполнения элемента (переполняется) в горизонтальном и/или вертикальном направлении.*/
    border: 10px solid #cccdce;
 }
 
 .middle {
-   position: absolute;
-   top: 80%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   
+   position: static; /* Элемент удаляется из обычного потока документов, и для него не создается места в макете страницы.  */
+   top: 5%;
+   left: 0%;
+   margin-top: 10px;
+   transform: translate(-0%, -0%); /* позволяет поворачивать, масштабировать, наклонять или переводить элемент. translate -  */
+   width: 50%; /* Относительная ширина контейнера */
+   height: 50%;
+   margin: 0 auto; /* Центрирование */
 }
 
 .navigation {
-   position: absolute;
-   bottom: 16px;
+   position: absolute; /* Элемент удаляется из обычного потока документов, и для него не создается места в макете страницы.  */
+   bottom: 16px; /* участвует в установке вертикального положения позиционируемого элемента. */
    left: 50%;
-   transform: translateX(-50%);
-   display: flex;
+   transform: translateX(-50%); /* перемещает элемент горизонтально в 2D-плоскости - влево + вправо 0 не перемещает. */
+   display: flex; /* Элемент ведет себя как элемент уровня блока и размещает свое содержимое в соответствии с моделью flexbox.*/
+   
 }
 
+
 .bar {
-   width: 30px;
+   width: 50px;
    height: 8px;
    margin: 6px;
-   cursor: pointer;
+   cursor: pointer; /*Курсор — это указатель, который указывает на ссылку. Как правило, изображение указывающей руки.*/
    background-color: #000;
-   opacity: .5;
-   border-radius: 10px;
-   transition: all 0.4s ease;
+   opacity: .5;  /*задает непрозрачность элемента */
+  border-radius: 5px;  /*округляет углы внешнего края границы элемента */
+  transition: all 0.4s ease;  /* задержка в ...., прежде чем произойдет...*/
 }
 
 .bar:hover {
-   opacity: 1;
-   transform:scale(1.1);
+   opacity: 1; /*задает непрозрачность элемента */
+   transform:scale(1.1); /* растягивает по горизонтали + по вертикали*/
+   
 }
 
-input[name="r"] {
-   position: absolute;
-   visibility: hidden;
+input[name="r"] { 
+   position: absolute; /* Элемент удаляется из обычного потока документов, и для него не создается места в макете страницы.  */
+   visibility: hidden; /*скрывает элемент без изменения макета документа*/
 }
 
 .slides {
-   width: 400%;
-   height: 100%;
-   display: flex;
+   width: 400%; /* Увеличение размера фото*/
+   height: 100%; /* Увеличение размера фото*/
+   display: flex; /* Элемент ведет себя как элемент уровня блока и размещает свое содержимое в соответствии с моделью flexbox.*/
 }
 
 .slide {
@@ -136,9 +142,9 @@ input[name="r"] {
    transition: all 0.6s ease;
 }
 
-.img {
-   width: 100%;
-   height: 100%;
+.img { 
+   width: 100%; /* сжатие размера каждого фото отностительно рамки*/
+   height: 100%; /* сжатие размера каждого фото отностительно рамки*/
 }
 
 #r1:checked ~ .s1 {
@@ -154,8 +160,7 @@ input[name="r"] {
 }
 
 #r4:checked ~ .s1 {
-   margin-left: -75%;
-   
+   margin-left: -75%; 
 
 }
 
