@@ -285,7 +285,7 @@ article {
 	margin-top: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
-	border: solid #2B3140 1px;/* рамка для проверки */ 
+	/* border: solid #2B3140 1px; рамка для проверки */ 
 }
 
 .markers li::marker {
