@@ -1,84 +1,175 @@
-<style>
-
 body {
-font-family: Arial, sans-serif;
-font-size: 18px; 
-margin: 0;
-padding: 0;
+  margin: 0;
+  align-items: center; /*выравнивание всех элементов по центру по горизонтали*/
+  justify-content: center; /*выравнивание каждого элемента контейнера по центру*/
+  font-family: Tahoma;
+  font-size: 18px;
+  color: #2B3140;
 }
 
-p {
-  font-size: 18px;
-  text-align: left;
-  margin-left: 5px;
-  margin-right: 15px;
-  padding-top: 10px;
+.header {
+font-family: Verdana;
+font-size: 16px;
+color: #ffffff;
+text-align: center;
+padding: 15px; /* ширина полоски */
+
+background-color: #252c3c; 
 }
+
+/*Список меню с фиксацией по горизонтали*/
+
+li {
+  text-align: left;
+}
+
+	
+nav ul li {
+	display: inline-block; /*отображение элементов списка меню горизонтально, а не вертикально*/
+	}
+nav a {
+	font-size: 16px;   
+	color: #EDEEEE;	
+	line-height: 5px;
+	padding: 0 10px;
+	text-decoration: none;
+}
+nav a:hover { 
+    text-decoration: underline;
+	color: #AFD275;
+}
+
+/*КОНТЕНТ*/
 
 h1 {
-  color: #4fb9e3;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 5px;
 }
 
 h2 {
   text-align: center;
+  font-size: 18px;
+  
+  height: 35px;
+  margin-top: 5px;
 }
 
-section {
-        display: flex; /*каждый flex-элемент будет занимать одинаковое количество места в flex-контейнере*/
-      }
-article {
-        padding: 10px;
-        margin: 10px;
-        background: #dedfe0;
-		border-radius: 20% 2%;  /*закругляшки*/
-      }
-	  
-.container {
-box-sizing: border-box;
-border: solid #5B6DCD 10px;
-width: 100%; /* Относительная ширина контейнера */ 
-height: 100%; /* Относительная высота контейнера */ 
-margin: 0 auto; /* Центрирование */
-background-color: #f0f0f0;
-padding: 0px; /* узость - отступы контента контейнера слева и справа */
-padding-bottom: 10px;
+p {
+  font-size: 18px;
+  color: #2B3140;
+  text-align: left;
+  
+  margin-left: 5px;
+  margin-right: 15px;
+  margin-bottom: 10px;
 }
 
-/* полоска с заголовком Н1 */
-.header {
-background-color: #333;
-color: #fff;
-text-align: center;
-padding: 10px; /* ширина полоски */
+.zag {
+  font-size: 25px;
+  text-align: center;
+  
+  height: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .footer {
-background-color: #333;
-color: #fff;
+font-family: Verdana;
+color: #ffffff;
+font-size: 16px; 
 text-align: center;
+
 padding: 20px; /* ширина полоски */
+margin-top: 10px;
+background-color: #7E685A;
 }
 
-
-.content {
-padding: 10px;
-}
-
-@media screen and (max-width: 768px) { /* Медиа-запрос для адаптации на мобильных устройствах */
-
+/* КОНТЕЙНЕР FLEX */  
 .container {
-width: 100%; /* Уменьшение ширины контейнера */
+  display: flex;
+  flex-wrap: wrap;
+  /*border: solid #5B6DCD 1px;/* рамка для проверки */  
 }
+
+.centrirovanie {
+display: flex;
+justify-content: center;
+align-items: center; /*выравниванием элементов по поперечной оси */ 
+margin-top: 0px;
+}
+
+/* 3 БЛОКА МЕНЮ + FLEX container centrirovanie */  
+
+.articleN {
+        max-width: 400px; 
+		height: 180px;
+		padding: 10px;
+        margin: 20px;
+		border-radius: 15% 2%;  /*закругляшки*/
+		color: ffffff;
+		
+        background: #AFD275;
+}
+	  
+
+
+/* ТАБЛИЦА */  
+
+
+
+.table {
+  font-size: 18px;
+  border-style: none;
+  border-collapse: collapse;
+  
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto; /* Центрирование */
+  
+ /* border: solid #5B6DCD 1px;/* рамка для проверки */ 
+}
+
+.zag-table {
+  font-size: 20px;
+  text-align: center;
+  
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.th  {
+  border: #adadad; 
+  color: #2B3140;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7E685A;
+  
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-right: 5px; 
+  height: 40px;
+}
+
+.td  {
+border: #adadad;
+text-align: center;
+
+padding-left: 10px;
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 5px;
+margin-right: 5px; 
+margin-left: 5px; 
+height: 40px;
 }
 
 
-/*слайдер*/
-* {
-   margin: 0;
-   padding: 0;
-}
+
+/*СЛАЙДЕР*/
 
 .slider {
    width: 800px;
@@ -99,15 +190,60 @@ width: 100%; /* Уменьшение ширины контейнера */
    margin: 0 auto; /* Центрирование */
 }
 
+.slides {
+   width: 400%; /* Увеличение размера фото*/
+   height: 100%; /* Увеличение размера фото*/
+   display: flex; /* Элемент ведет себя как элемент уровня блока и размещает свое содержимое в соответствии с моделью flexbox.*/
+}
+
+.slide {
+   width: 25%;
+   transition: all 0.6s ease;
+}
+
+.img { 
+   width: 100%; /* сжатие размера каждого фото отностительно рамки*/
+   height: 100%; /* сжатие размера каждого фото отностительно рамки*/
+}
+/* Адаптивные фото
+img {
+  max-width: 100%;
+  height: auto;
+}
+*/
+
+
+
+
+
+#r1:checked ~ .s1 {
+   margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+   margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+   margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+   margin-left: -75%; 
+}
+
+input[name="r"] { 
+   position: absolute; /* Элемент удаляется из обычного потока документов, и для него не создается места в макете страницы.  */
+   visibility: hidden; /*скрывает элемент без изменения макета документа*/
+}
+
 .navigation {
    position: absolute; /* Элемент удаляется из обычного потока документов, и для него не создается места в макете страницы.  */
    bottom: 16px; /* участвует в установке вертикального положения позиционируемого элемента. */
    left: 50%;
    transform: translateX(-50%); /* перемещает элемент горизонтально в 2D-плоскости - влево + вправо 0 не перемещает. */
-   display: flex; /* Элемент ведет себя как элемент уровня блока и размещает свое содержимое в соответствии с моделью flexbox.*/
-   
+   display: flex; /* Элемент ведет себя как элемент уровня блока и размещает свое содержимое в соответствии с моделью flexbox.*/  
 }
-
 
 .bar {
    width: 50px;
@@ -126,82 +262,93 @@ width: 100%; /* Уменьшение ширины контейнера */
    
 }
 
-input[name="r"] { 
-   position: absolute; /* Элемент удаляется из обычного потока документов, и для него не создается места в макете страницы.  */
-   visibility: hidden; /*скрывает элемент без изменения макета документа*/
-}
-
-.slides {
-   width: 400%; /* Увеличение размера фото*/
-   height: 100%; /* Увеличение размера фото*/
-   display: flex; /* Элемент ведет себя как элемент уровня блока и размещает свое содержимое в соответствии с моделью flexbox.*/
-}
-
-.slide {
-   width: 25%;
-   transition: all 0.6s ease;
-}
-
-.img { 
-   width: 100%; /* сжатие размера каждого фото отностительно рамки*/
-   height: 100%; /* сжатие размера каждого фото отностительно рамки*/
-}
-
-#r1:checked ~ .s1 {
-   margin-left: 0;
-}
-
-#r2:checked ~ .s1 {
-   margin-left: -25%;
-}
-
-#r3:checked ~ .s1 {
-   margin-left: -50%;
-}
-
-#r4:checked ~ .s1 {
-   margin-left: -75%; 
-
-}
 
 
+/*НОВОСТИ*/
 
-.content-box {
-  column-gap: 100px; /*расстояние между столбцами*/
-  column-count: 3; /*количество столбцов*/
-  column-rule: dotted 4px rgb(79 185 227); /*точки, толщина, цвет*/
-  padding-left: 10px;
-  padding-right: 15px;
-   font-size: 18px;
-  margin-top: 40px;
-  
-}
-
-
-.text {
-  color: #067a94;
-  font-size: 25px;
-  column-span: 1;
-  /*column-span: all;*/
-  background-color: rgb(79 185 227);
-  
-  color: white;
-  padding: 10px;
-  text-align: left;
-}
-.text-content {
-  font-size: 18px;
-  text-align: left;
-  padding-left: 10px;
+section {
+        display: flex; /*каждый flex-элемент будет занимать одинаковое количество места в flex-контейнере*/
+		justify-content: center;
+		flex-wrap: wrap;
+		/*border: solid #5B6DCD 1px;/* рамка для проверки */ 
+      }
+	  
+article {
+    flex: 1 400px;
+	/*border: solid 3px;*/
+	margin: 20px;
+	/*border: solid #2B3140 1px;/* рамка для проверки */ 
 }
 
 .markers li::marker {
-	color: #4FB9E3;
-	font-size: 18px;
+	font-size: 20px;
+	color: #aeafb2;
+	
 }
-.txt {
-  font-size: 18px;
-  text-align: left;
-  padding-left: 20px;
+
+/*ТЕКСТ ПРИ НАВЕДЕНИИ*/
+
+.help:hover {
+	color: #858784;
 }
-</style>
+
+
+blockquote {
+	display:none;
+	
+}
+
+tr:hover blockquote {
+	display:inline;
+	background-color: rgb(126, 104, 89, 0.85);
+	color: #ffffff;
+	font-size: 14px;
+	padding: 10px 10px 10px 10px; 
+	border-radius: 7px;
+	position: absolute;
+	margin-left: 25px;
+	margin-top: -10px;	
+	text-transform: none; 
+}
+
+
+/*ТЕКСТ ПРИ НАВЕДЕНИИ NEW*/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 600px;
+  background-color: #555;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
