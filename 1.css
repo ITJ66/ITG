@@ -208,22 +208,10 @@ height: 40px;
    height: 100%; /* сжатие размера каждого фото отностительно рамки*/
 }
 
-.responsive {
+.responsive img {
   width: 100%;
-  min-width: 210px;
   height: auto;
 }
-
-/* Адаптивные фото
-img {
-  max-width: 100%;
-  height: auto;
-}
-*/
-
-
-
-
 
 #r1:checked ~ .s1 {
    margin-left: 0;
