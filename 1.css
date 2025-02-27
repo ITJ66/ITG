@@ -276,6 +276,10 @@ section {
 		/*border: solid #5B6DCD 1px;/* рамка для проверки */ 
       }
 	  
+.column {
+	flex-direction: column;
+}
+	  
 article {
     flex: 1 400px;
 	/*border: solid 3px;*/
