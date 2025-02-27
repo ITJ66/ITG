@@ -283,7 +283,9 @@ section {
 article {
     flex: 1 400px;
 	/*border: solid 3px;*/
-	margin: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
 	border: solid #2B3140 1px;/* рамка для проверки */ 
 }
 
