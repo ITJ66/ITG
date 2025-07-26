@@ -713,7 +713,7 @@
 		
 		
 /* 344px - 539px */
-@media (min-width: 344px) and (max-width: 539px) {
+@media (min-width: 319px) and (max-width: 539px) {
 
     body, html {
 		font-size: 15px;
