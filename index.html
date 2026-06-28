@@ -1,1 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Пример заголовка">
+	<title>Название страницы</title>
+    <meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="xstyle.css">
+</head>
+<body>
+<header>
+    <nav>
+    <ul class="menu">
+        <li><a href="#">Информация</a></li>
+		<li><a href="#">Графики</a></li>
+        <li><a href="#">Презентация</a></li>
+        <li><a href="#">Решение вопросов</a></li>
+    </ul>
+  </nav>
+</header>
+<main> 
+<section>
+  <div class="flex">
+    <div class="grid-content">
+      <div class="item-content">
+	  <h1>Визуализация контента</h1>
+            
+                
+				<div class="important">
+					<div style="background-color: #0592c1;"></div>
+					<div class="important-block">
+						<q><i>Визуализация контента — это представление информации в текстовой, графической или интерактивной форме для улучшения её восприятия, запоминания и вовлеченности</i></q>.
+					</div>
+				</div>
+				 <p>Базовый функционал сайта может быть условно разделен на три блока, у каждого из которых своя задача:
+				<ol>
+					<li>Информирование или обучение.</li>
+					<li>Выявление, устранение проблем и решение вопросов.</li>
+					<li>Продажи.</li>
+				</ol>
+				</p>      
+	  
+	  </div>
+    </div>
+  </div>
+</section>
+<section>
+<div class="flex">
+  <div class="grid-sector">
+      <div class="item-sector">
+        <div class="conteiner-sector size">
+			<div class="cube background-horse">
+				<svg shape-rendering="crispEdges" width="350" height="200" style="padding-top: 50px;" viewBox="0 -150 600 250">
 
+						<polygon stroke-width="3px"  fill="#323232" 
+						points="85,110 218,110 184,37 215,-23 285,-23 320,-90 190,-90 85,110" /> 
+						  
+						<polygon stroke-width="3px" fill="gray" 
+						  points="184,37  250,180 287,110 215,-23 "/>     
+						  
+						<polygon stroke-width="3px" fill="#323232"
+						  points="319,43 387,43 455,-90 385,-90 319,43" />   
+						 
+						<polygon stroke-width="3px"  fill="gray"
+						  points="319,43 385,-90 285,-283 220,-155 250,-90 320,-90 283,-23 317,43"/>  
+
+						<polygon stroke-width="3px"  fill="#323232"
+						  points="250,180 450,180 487,110 285,110 250,180" /> 
+						  
+						<polygon stroke-width="3px"  fill="gray"
+						  points="85,110 190,-90 158,-155 52,38 85,110"/> 
+						 
+						<polygon stroke-width="3px" fill="#cdd0cc"
+						  points="487,110 285,110 215,-23 283,-23 320,43 387,43 416.6,-15 487,110" />     
+						  
+						<polygon stroke-width="3px" fill="#cdd0cc"
+						  points="385,-90 455,-90 350,-283 285,-283 385,-90" />    
+						  
+						<polygon stroke-width="3px"  fill="#5eac02"
+						  points="190,-90 320,-90 285,-155 158,-155 " />   
+				</svg>
+			</div>
+        </div>      
+      </div>
+      <div class="text-sector">
+            <ul style="display: flex; flex-direction: column;">
+				<li><b>Информирование</b>: например, текстовый блок, &laquo;Термины&raquo;, &laquo;Фотогалерея&raquo;, &laquo;Таблицы&raquo;, &laquo;Цитаты&raquo;, интерактивные инструкции и тренажёры.</li>
+				<li><b>Помощь</b>: графики, &laquo;Вопрос / ответ&raquo;, &laquo;Схема-дерево&raquo;, интерактивные тесты, чек-листы, сравнительные таблицы и видео.</li>
+				<li><b>Продажи</b>: например, &laquo;Обратная связь&raquo; (файлы на скачку, социальные сигналы и формы связи), &laquo;Презентация компании&raquo;, &laquo;Демонстрация товара&raquo; и &laquo;Отзывы&raquo;. </li>									
+			</ul>
+
+      </div>
+    </div> 
+	</div>
+</section>
+
+<section>
+  <div class="flex">
+    <div class="grid-content">
+      <div class="item-content">
+	  <h2>Интерактивная таблица</h2>
+            <div style="display: flex; flex-direction: column; ">
+			    
+				<div style="order: 2;" id="text1" class="square table-item" style="margin-top: 10px;">
+					<div class="bgsquare1"></div>
+					<div style="margin-top: 10px; margin-left: 10px;">
+						<i>Михаил Афанасьевич Булгаков - писатель, врач, театральный режиссер, актер и драматург. Самые читаемые его произведения: &laquo;Мастер и Маргарита&raquo;, &laquo;Собачье сердце&raquo;, &laquo;Иван Васильевич&raquo; и другие.</i>
+					</div>
+				</div>
+				
+				<div style="order: 3;" id="text2" class="square table-item" style="margin-top: 10px;">
+					<div class="bgsquare2"></div>
+					<div style="margin-top: 10px; margin-left: 10px;">
+						<i>Фёдор Михайлович Достоевский - писатель, философ, мыслитель и публицист. Член-корреспондент Петербургской академии наук, по данным ЮНЕСКО, один из самых популярных писателей в мире. Его романы &laquo;великого пятикнижия» — &laquo;Преступление и наказание&raquo;, &laquo;Идиот&raquo;, &laquo;Бесы&raquo;, &laquo;Подросток&raquo;, &laquo;Братья Карамазовы&raquo;.</i>
+					</div>
+				</div>
+				
+				<div style="order: 4;" id="text3" class="square table-item" style="margin-top: 10px;">
+					<div class="bgsquare3"></div>
+					<div style="margin-top: 10px; margin-left: 10px;">
+						<i>Марк Мэнсон - блогер, публицист, автор и консультант по личному развитию. Его книга &laquo;Тонкое искусство пофигизма&raquo; находится в списке бестселлеров The New York Times.</i>
+					</div>
+				</div>
+				
+				<div style="order: 5;" id="text4" class="square table-item" style="margin-top: 10px;">
+					<div class="bgsquare4"></div>
+					<div style="margin-top: 10px; margin-left: 10px;">
+						<i>А. П. Чехов - писатель, прозаик, драматург, врач, публицист, благотворительный деятель. Его произведения переведены более чем на 100 языков мира, среди них: &laquo;Чайка&raquo;, &laquo;Три сестры&raquo; и &laquo;Вишнёвый сад&raquo;.
+						Дейл Карнеги - американский педагог, писатель, оратор-мотиватор. Среди его известных книг - &laquo;Как завоевывать друзей и оказывать влияние на людей&raquo;.
+						</i>
+					</div>
+				</div>
+				
+				<div style="order: 6;" id="text5" class="square table-item" style="margin-top: 10px;">
+					<div class="bgsquare5"></div>
+					<div style="margin-top: 10px; margin-left: 10px;">
+						<i>Джордж Клейсон - американский писатель, автор бестселлера &laquo;Самый богатый человек в Вавилоне&raquo;.</i>
+					</div>
+				</div>
+				
+					<table style="order: 1;">
+						<caption><i>Пример интерактивной таблицы: популярная литература у людей разных профессий <br>(исследование &laquo;Яндекс Книг&raquo; и сайта HH.ru)</i>.</caption>
+						  <thead>
+							<tr>
+							  <th>Писатели</th>
+							  <th>Профессия</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+								<td>М. А. Булгаков.</td>
+								<td>Медики и аналитики.</td>
+							</tr>
+							 <tr>
+								<td>Ф. М. Достоевский.</td>
+								<td>Представители творческих профессий.</td>
+							</tr>
+							 <tr>
+								<td>Марк Мэнсон.</td>
+								<td>Бухгалтеры.</td>
+							</tr>
+							<tr>
+								<td>А. П. Чехов, Д. Карнеги.</td>
+								<td>Учителя.</td>
+							</tr>
+							<tr>
+								<td>Джордж Клейсон.</td>
+								<td>Менеджеры по продажам.</td>
+							</tr>
+						</tbody>
+					</table>
+			</div>
+	  </div>
+    </div>
+  </div>
+</section>
+
+
+<!--
+<section>    
+  <div class="flex">
+    <div class="grid-gallery">
+        <div class="item-gallery">
+            <div class="conteiner-photo">
+                 <img src="C:/Users/ilyna/Desktop/site-go/lamp.png" alt="Идея">
+            </div>
+        </div>
+        <div class="item-gallery">
+            <div class="conteiner-photo">
+                 <img src="C:/Users/ilyna/Desktop/site-go/learn.png" alt="Решение вопросов">
+            </div>
+        </div>
+        <div class="item-gallery">
+            <div class="conteiner-photo">
+                 <img src="C:/Users/ilyna/Desktop/site-go/up.png" alt="Графики">
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+-->
+
+<section>
+<div class="flex">
+    <div class="grid-content">
+		<div class="item-content">
+			<h2 style="text-align: center;">Гистограмма и график</h2>
+					<div class="grid-gramm">
+						<svg class="svg-gramm">
+						<text x="27%" y="0.035%" class="zag1">ТОП РАЗДЕЛОВ и продажи по месяцам</text>
+							 <!-- Ось X -->
+							<line class="axis-x line-width" x1="5%" x2="82.5%" y1="77%" y2="77%"></line>
+							<line class="axis-x line-width" x1="12.5%"  x2="12.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="16%"    x2="16%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="19.5%"  x2="19.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="23%"    x2="23%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="26.5%"  x2="26.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="30%"    x2="30%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="33.5%"  x2="33.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="37%"    x2="37%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="40.5%"  x2="40.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="44%"    x2="44%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="47.5%"  x2="47.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="51%"    x2="51%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="54.5%"  x2="54.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="58%"    x2="58%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="61.5%"  x2="61.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="65%"    x2="65%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="68.5%"  x2="68.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="72%"    x2="72%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="75.5%"  x2="75.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="79%"    x2="79%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="82.5%"  x2="82.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+
+							<g class="x"  transform="translate(11%,95%)">
+								<text class="text-stolb" x="16%" y="45%">325</text>
+								<text class="text-stolb" x="26.2%" y="45%">325</text>
+								<text class="text-stolb" x="37%" y="38%">390</text>
+								<text class="text-stolb" x="47.5%" y="34%">405</text>
+								<text class="text-stolb" x="57.5%" y="30%">460</text>
+								<text class="text-stolb" x="68.5%" y="33%">405</text>
+								<text class="text-stolb" x="79%" y="7.5%">700</text>
+							</g>
+							<!-- Ось Y -->
+							<line class="axis-y line-width" x1="9%" x2="9%" y1="-1%" y2="81%" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="73.5%"  y2="73.5%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="69%"  y2="69%" stroke="#a0a5a1"/>
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="64%"  y2="64%" stroke="#a0a5a1"/>
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="59%"  y2="59%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="54%"  y2="54%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="49%"  y2="49%" stroke="#a0a5a1"/>
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="44%"  y2="44%" stroke="#a0a5a1"/>
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="39%"  y2="39%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="34%"  y2="34%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="29%"  y2="29%" stroke="#a0a5a1"/>
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="24%"  y2="24%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="19%"  y2="19%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="14%"  y2="14%" stroke="#a0a5a1" />	
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="9%" y2="9%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="4%" y2="4%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="-1%" y2="-1%" stroke="#a0a5a1" />
+	
+							<g class="y" transform="translate(11%,95%)">
+								<text class="text-y" x="7%" y="82%">0</text>
+								<text class="text-y" x="3%" y="70%">100</text>
+								<text class="text-y" x="3%" y="60%">200</text>
+								<text class="text-y" x="3%" y="50%">300</text>
+								<text class="text-y" x="3%" y="40%">400</text>
+								<text class="text-y" x="3%" y="30%">500</text>
+								<text class="text-y" x="3%" y="20%">600</text>
+								<text class="text-y" x="3%" y="10%">700</text>
+								<text class="text-y" x="3%" y="0%">₽, тыс.</text>
+							</g>
+	
+							<!-- Столбики графика (координаты в %) -->
+								
+						   <rect x="12.5%" y="47%" width="7%" height="30%" fill="#04a3d8" />
+						   <text class="month-font" x="16.5%" y="64%" text-anchor="middle" fill="white">Январь</text>
+						   
+						   <rect x="23%" y="47%" width="7%" height="30%" fill="#0592c1" />
+						   <text class="month-font"  x="27%" y="63%" text-anchor="middle" fill="white">Февраль</text>
+							
+							<rect x="33.5%" y="40%" width="7%" height="37%" fill="#0382ad" />
+							<text class="month-font"  x="37.5%" y="67%" text-anchor="middle" fill="white">Март</text>
+							
+							<rect x="44%" y="36%" width="7%" height="41%" fill="#0380aa" />
+							<text class="month-font"  x="48%" y="64%" text-anchor="middle" fill="white">Апрель</text>
+							
+							<rect x="54.5%" y="32%" width="7%" height="45%" fill="#046c8e" />
+							<text class="month-font"  x="59%" y="68%" text-anchor="middle" fill="white">Май</text>
+							
+							<rect x="65%" y="35%" width="7%" height="42%" fill="#025875" />
+							<text class="month-font"  x="69%" y="66%" text-anchor="middle" fill="white">Июнь</text>
+							
+							<rect x="75.5%" y="9%" width="7%" height="68%" fill="#025875" />
+							<text class="month-font"  x="80%" y="66%" text-anchor="middle" fill="white">Июль</text>
+						</svg>
+					</div>
+					<p style="text-align: center;">Пример ТОП-10 разделов книжного интернет-магазина с наибольшими продажами книг.</p>
+						<ul class="flexbox1 custom-list1">
+							<li>Художественная литература.</li>
+							<li>Комиксы, Манга.</li>
+							<li>Художественная литература, комиксы.</li>					
+							<li>Методическая, детская литература.</li>
+							<li>Молодежная литература.</li>
+							<li>Художественная и учебная литература.</li>
+							<li>Артбуки.</li>						
+						</ul>
+	
+					<div class="grid-gramm">
+						<svg class="svg-gramm">
+							<text x="30%" y="0.035%" style="fill: #025875; stroke: #676768; font-size: 0.85em; font-weight: lighter;">ОБЪЕМЫ ПРОДАЖ И ПРИБЫЛИ</text>
+							<text class="year" x="14%" y="83%" style="">2021 г.</text>
+							<text class="year" x="21%" y="83%">2022 г.</text>
+							<text class="year" x="38%" y="83%">2023 г.</text>
+							<text class="year" x="48%" y="83%">2024 г.</text>
+							<text class="year" x="75%" y="83%">2025 г.</text>
+							 <!-- Ось X -->
+							<line class="axis-x line-width" x1="5%" x2="82.5%" y1="77%" y2="77%"></line>
+							<line class="axis-x line-width" x1="12.5%"  x2="12.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="16%"    x2="16%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="19.5%"  x2="19.5%"  y1="77%"   y2="79%" stroke="#a0a5a1"/>
+							<line class="axis-x line-width" x1="23%"    x2="23%"    y1="77%"   y2="79%" stroke="#a0a5a1"/>
+							<line class="axis-x line-width" x1="26.5%"  x2="26.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="30%"    x2="30%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="33.5%"  x2="33.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="37%"    x2="37%"    y1="77%"   y2="79%" stroke="#a0a5a1"/>
+							<line class="axis-x line-width" x1="40.5%"  x2="40.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="44%"    x2="44%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="47.5%"  x2="47.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="51%"    x2="51%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="54.5%"  x2="54.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="58%"    x2="58%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="61.5%"  x2="61.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="65%"    x2="65%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="68.5%"  x2="68.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="72%"    x2="72%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="75.5%"  x2="75.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="79%"    x2="79%"    y1="77%"   y2="79%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="82.5%"  x2="82.5%"  y1="77%"   y2="79%" stroke="#a0a5a1" />
+
+							
+							<!-- Ось Y -->
+							<line class="axis-y line-width" x1="9%" x2="9%" y1="-1%" y2="81%" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="73.5%"  y2="73.5%" stroke="#a0a5a1"/>
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="69%"  y2="69%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="64%"  y2="64%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="59%"  y2="59%" stroke="#a0a5a1"/>
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="54%"  y2="54%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="49%"  y2="49%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="44%"  y2="44%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="39%"  y2="39%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="34%"  y2="34%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="29%"  y2="29%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="24%"  y2="24%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="19%"  y2="19%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="14%"  y2="14%" stroke="#a0a5a1" />	
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="9%" y2="9%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="4%" y2="4%" stroke="#a0a5a1" />
+							<line class="axis-x line-width" x1="7%"   x2="9%" y1="-1%" y2="-1%" stroke="#a0a5a1" />
+	
+							<g class="y" transform="translate(11%,95%)">
+								<text class="text-y" x="7%" y="82%">0</text>
+								<text class="text-y" x="3%" y="70%">100</text>
+								<text class="text-y" x="3%" y="60%">200</text>
+								<text class="text-y" x="3%" y="50%">300</text>
+								<text class="text-y" x="3%" y="40%">400</text>
+								<text class="text-y" x="3%" y="30%">500</text>
+								<text class="text-y" x="3%" y="20%">600</text>
+								<text class="text-y" x="3%" y="10%">700</text>
+								<text class="text-y" x="3%" y="0%">₽, тыс.</text>
+							</g>
+	
+							<!-- Линии графика продаж(координаты в %) -->
+							
+							<circle class="point" cx="19.8%" cy="64.5%" r="6" fill="#025875" style="cursor: pointer;"/>
+							<text class="hover-text" x="18%" y="62%">150</text>							
+						    <line class="axis-x line-width" x1="9%"   x2="19%" y1="77%"  y2="65%" stroke="#a0a5a1" />							
+							
+							<line class="axis-x line-width" x1="20.4%"   x2="23%" y1="65.5%"  y2="70%" stroke="#a0a5a1" />
+							<circle cx="23%" cy="70%" r="6" fill="#025875" style="cursor: pointer;"/>
+							<text class="hover-text" x="22%" y="67%">90</text>
+							
+							<line class="axis-x line-width" x1="23.7%"   x2="40%" y1="69.5%"  y2="45%" stroke="#a0a5a1"/>
+							<circle cx="40%" cy="45%" r="6" fill="#025875" style="cursor: pointer;"/>
+							<text class="hover-text" x="38%" y="42%">350</text>
+							
+							<line class="axis-x line-width" x1="40.5%"   x2="50%" y1="46%"  y2="65%" stroke="#a0a5a1"/>
+							<circle cx="50%" cy="65%" r="6" fill="#025875" style="cursor: pointer;"/>
+							<text class="hover-text" x="48.5%" y="72%">120</text>
+							
+							
+							<line class="axis-x line-width" x1="50.7%"   x2="80%" y1="64.3%"  y2="25%" stroke="#a0a5a1"/>
+							<circle cx="80%" cy="25%" r="6" fill="#025875" style="cursor: pointer;"/>
+							<text class="hover-text" x="78.5%" y="22%">520</text>
+							
+							<!-- Линии графика прибыли (координаты в %) -->
+							
+							<line class="axis-x line-width" x1="9%"   x2="19%" y1="77%"  y2="55%" stroke="#a0a5a1"/>
+							<circle class="point" cx="19.5%" cy="54.5%" r="6" fill="#04a3d8" stroke="#a0a5a1" style="cursor: pointer;"/>
+							<text class="hover-text size" x="18%" y="51%">250</text>
+							
+							<line class="axis-x line-width" x1="20%"   x2="23%" y1="55%"  y2="60%" stroke="#a0a5a1" />
+							<circle cx="23%" cy="60%" r="6" fill="#04a3d8" style="cursor: pointer;"/>
+							<text class="hover-text size" x="22%" y="57%">200</text>
+							
+							<line class="axis-x line-width" x1="23.5%"   x2="40%" y1="59.5%"  y2="25%" stroke="#a0a5a1"/>
+							<circle cx="40%" cy="25%" r="6" fill="#04a3d8" style="cursor: pointer;"/>
+							<text class="hover-text size" x="38.5%" y="22%">550</text>
+							
+							<line class="axis-x line-width" x1="40.5%"   x2="50%" y1="26%"  y2="60%" stroke="#a0a5a1" />
+							<circle cx="50%" cy="60%" r="6" fill="#04a3d8" style="cursor: pointer;"/>
+							<text class="hover-text size" x="48.5%" y="57%">160</text>
+							
+							<line class="axis-x line-width" x1="50.5%"   x2="80%" y1="60%"  y2="10%" stroke="#a0a5a1"/>
+							<circle cx="80%" cy="10%" r="6" fill="#04a3d8" style="cursor: pointer;"/>
+							<text class="hover-text size" x="78.5%" y="7%">690</text>
+						</svg>
+					</div>
+					<p>Пример роста объемов продаж и прибыли книжного интернет-магазина с 2021-2025 г.г.</p>
+						<ul class="flexbox2 custom-list2">
+							<li>Продажи.</li> 
+							<li>Прибыль интернет-магазина.</li>					
+						</ul>        
+    </div>				
+</div>
+</div>
+</section> 
+
+<section>
+  <div class="flex">
+    <div class="grid-sector">
+      <div class="item-sector">
+	  <h2>Диаграмма</h2>
+        <div class="conteiner-sector size">
+                <svg width="300" height="300" viewBox="0 0 100 100">
+				              
+							  <circle cx="50" cy="50" r="45" fill="#57aff2" />
+							  <defs>
+								<clipPath id="sector0">
+								  <polygon points="50,50 100,50 -2600,1950"/>
+								  <text class="hover-text text-y" x="12%" y="47%">90%</text>
+								</clipPath>
+							   
+								<clipPath  id="sector1">
+								  <polygon  points="50,50 100,50 -400,1690" />
+								</clipPath>
+								
+							   
+								<clipPath id="sector2">
+								  <polygon points="50,50 100,-150 100,155"/>
+								</clipPath>
+								
+								
+								<clipPath id="sector3">
+								  <polygon points="50,50 100,50 100,-285"/>
+								</clipPath> 
+							  </defs>
+							  
+							  <circle cx="50" cy="50" r="45" clip-path="url(#sector0)" fill="SteelBlue"/>
+							  <circle cx="50" cy="50" r="45" clip-path="url(#sector1)" fill="DimGray"/>
+							  <circle cx="50" cy="50" r="45" clip-path="url(#sector2)" fill="CadetBlue"/>
+							  <circle cx="50" cy="50" r="45" clip-path="url(#sector3)" fill="RoyalBlue"/>  
+							  
+							  <text x="20%" y="43%" class="percent">40%</text>
+							  <text x="59%" y="43%" class="percent">24%</text>
+							  <text x="65%" y="67%" class="percent">16%</text>
+							  <text x="24%" y="78%" class="percent">10%</text>
+							  <text x="45%" y="88%" class="percent">10%</text>
+				</svg>
+        </div>      
+      </div>
+      <div class="text-sector">
+           <p>Распределение показателей:</p>
+            <ul class="flexbox2 custom-list3">
+				<li>Художественная литература;</li>
+				<li>Учебная литература;</li>
+				<li>Методическая литература;</li>					
+				<li>Научная литература;</li>
+				<li>Молодежная литература.</li>							
+			</ul>
+			<p>На круговой диаграмме представлена доля популярных разделов в общем объеме продаж интернет-магазина книг. 
+			Наибольший процент продаж составил раздел с художественной литературой. 
+			Наименьший - разделы "Научная литература" и "Молодежная литература".</p>
+      </div>
+    </div>
+ </div>
+
+</section>
+<section>
+  <div class="flex">
+    <div class="grid-content">
+      <div class="item-presentation">
+	  <h2>Презентация</h2>
+            <section style="display: flex; justify-content: center;">
+				<iframe
+        width="720"
+        height="405"
+        src="https://itj66.github.io/ITG/Tab.mp4"
+        style="border: none;"
+        allow="clipboard-write; autoplay"
+        allowFullScreen
+      ></iframe>			
+			 </section>
+			
+			
+			
+			
+      
+    
+      </div>
+    </div>
+  </div>
+</section> 
+
+
+<section>    
+  <div class="flex">
+    <div class="grid-accordeon">
+        <div class="item-accordeon">
+		 <h2 style="text-align: center;">Ответы на вопросы</h2>
+            <div class="conteiner-accordeon">
+                 <details>
+                    <summary><span class="question">Что такое контент?</span></summary>
+                        <div class="answer"><p>Контент - это информация, которая размещается на сайте для различных целей, например, для информирования, обучения, презентации и продажи товаров и услуг. 
+						Среди основных видов контента можно выделить текст, фото, видео, аудио и графику.
+                        </p></div>
+                </details>
+            </div>
+                        
+            <div class="conteiner-accordeon">
+                <details>
+                    <summary><span class="question">Релевантность информации - что это?</span></summary>
+                    <div class="answer"><p>Релевантность информации - степень соответствия страницы сайта запросу или контексту. 
+					Такая информация точно отвечает потребностям пользователя: проста для понимания, логична, 
+					отражает суть ключевой темы (запроса), уместна в данном контексте и актуальна. Она решает поставленную перед ней задачу и повышает лояльность посетителей.
+					
+                    </p></div>
+                </details>
+            </div>
+			<div class="conteiner-accordeon">
+                <details>
+                    <summary><span class="question">В чём особенность интерактивного контента?</span></summary>
+                    <div class="answer"><p>Интерактивный контент - это контент, с которым пользователь может взаимодействовать. 
+					Посетитель сайта сам меняет настройки отображения информации и выбирает собственный (персональный) путь изучения материала. 
+                    </p></div>
+                </details>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+    <div class="footer">
+        <ul class="footer-menu">
+            <li class="footer-item">
+                <span class="footer-icon">
+                   
+                </span>
+                <a href="#" class="footer-link">Вверх</a>
+            </li>
+            <li class="footer-item">
+                <span class="footer-icon">
+                   
+                </span>
+                <a class="footer-link" href="#" aria-label="Написать письмо на адрес example@domain.com (тема: Обратная связь)">Написать письмо</a>
+            </li>
+            <li class="footer-item">
+                <span class="footer-icon">
+                             
+                </span>
+                <a href="#" class="footer-link" target="_blank" rel="noopener noreferrer" aria-label="Вконтакте (откроется в новой вкладке)">Профиль Вконтакте</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
