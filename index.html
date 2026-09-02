@@ -1,1 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title" content="Заголовок страницы">
+<meta name="description" content="Описание">
+<link rel="stylesheet" type="text/css" href="html.css">
+<title>Заголовок сайта</title>
+</head>
+<body>
+<div class="wrapper">
+<header class="sticky">
+<nav>
+<ul class="menu">
+<li><a href="#test">Тест</a></li>
+<li><a href="#comparison">Сравнение</a></li>
+<li><a href="#dio">Диаграмма</a></li>
+<li><a href="#scheme">Блок-схема</a></li>
+<li><a href="#practice">Тренажёр</a></li>
+<li><a href="#map">Карта</a></li>
+</ul>
+</nav>
+</header>
 
+<main class="main">
+
+<section class="card">
+	<div class="content">
+		<h1>Инструменты визуализации</h1>
+		<div class="important">
+			<div style="background-color: #035a7a;"></div>
+			<div class="important-block"><q><i>		
+			Визуализация информации — это её представление в текстовой, графической или интерактивной форме для улучшения восприятия, 
+			запоминания и вовлеченности</i></q>.
+			</div>
+		</div>
+		<p>Динамический (изменяемый) контент может быть поделен на три блока. 
+		Каждый блок выполняет свою задачу, развлекает аудиторию сайта и позволяет запоминать большую часть информации:</p> 
+		
+		<div class="conteiner-accordeon">
+			<details>
+				<summary><span class="question">Информирует, обучает.</span></summary>
+				<div class="answer">
+					Например, текстовый блок, &laquo;Термины&raquo;, &laquo;Фотогалерея&raquo;, &laquo;Таблицы&raquo;, &laquo;Цитаты&raquo;, интерактивные инструкции и тренажёры.
+				</div>
+			</details>
+			<details>
+				<summary><span class="question">Выявляет и устраняет проблемы, отвечает на вопросы.</span></summary>
+				<div class="answer">
+					Графики, &laquo;Вопрос / ответ&raquo;, &laquo;Схема-дерево&raquo;, интерактивные тесты, чек-листы, сравнительные таблицы и видео.
+				</div>
+			</details>
+			<details>
+				<summary><span class="question">Продает товары или услуги.</span></summary>
+				<div class="answer">
+					Например, &laquo;Обратная связь&raquo; (файлы на скачку, социальные сигналы и формы связи), &laquo;Презентация компании&raquo;, &laquo;Демонстрация товара&raquo; и &laquo;Отзывы&raquo;.
+				</div>
+			</details>
+		</div>
+	</div>	
+</section>
+<div class="card">
+	<div class="content">
+		<div class="important">
+			<div style="background-color: #DEE6E9;"></div>
+			<div class="important-block"><q><i>SVG - это язык для описания двумерной графики в XML. 
+			Он позволяет создавать три типа объектов: векторные фигуры, растровые изображения и текст. 
+			SVG поддерживает интерактивность и анимацию с помощью DOM и событий</i></q>.
+			</div>
+		</div>
+	</div>
+</div>
+<div id="test" class="about">
+	<div class="img">
+		<svg width="350" height="480" viewBox="-180 -180 680 350">
+							<polygon stroke-width="3px"  fill="#323232" 
+							points="85,110 218,110 184,37 215,-23 285,-23 320,-90 190,-90 85,110" /> 
+							  
+							<polygon stroke-width="3px" fill="gray" 
+							  points="184,37  250,180 287,110 215,-23 "/>     
+							  
+							<polygon stroke-width="3px" fill="#323232"
+							  points="319,43 387,43 455,-90 385,-90 319,43" />   
+							 
+							<polygon stroke-width="3px"  fill="gray"
+							  points="319,43 385,-90 285,-283 220,-155 250,-90 320,-90 283,-23 317,43"/>  
+
+							<polygon stroke-width="3px"  fill="#323232"
+							  points="250,180 450,180 487,110 285,110 250,180" /> 
+							  
+							<polygon stroke-width="3px"  fill="gray"
+							  points="85,110 190,-90 158,-155 52,38 85,110"/> 
+							 
+							<polygon stroke-width="3px" fill="#cdd0cc"
+							  points="487,110 285,110 215,-23 283,-23 320,43 387,43 416.6,-15 487,110" />     
+							  
+							<polygon stroke-width="3px" fill="#cdd0cc"
+							  points="385,-90 455,-90 350,-283 285,-283 385,-90" />    
+							  
+							<polygon stroke-width="3px"  fill="#5eac02"
+							  points="190,-90 320,-90 285,-155 158,-155 "/>   
+		</svg>
+	</div>
+	<div>
+		<form style="display: flex; justify-content: center; align-items: flex-start; flex-direction: column;">
+			<fieldset>
+				<legend class="legend">Проверка фактов о SVG графике</legend>
+				<ul style="display: flex; flex-direction: column; margin: 0; padding: 0;">
+					<li class="flex-row">
+						<div style="display: block; margin-right: 10px; padding: 0; height: 100%; width: 25px;">
+							<input class="check1" type="checkbox" id="i1">
+						</div>
+						<div style="display: block; margin-top: 0; height: 100%; padding: 0; max-width: 450px; ">
+							<label class="black1" for="i1">
+								SVG векторная графика - это язык разметки для рисования. Его основа - математические формулы.
+							</label>
+						</div>
+					</li>
+					<li class="flex-row">
+						<div class="input">
+							<input class="check2" type="checkbox" id="i2">
+						</div>
+						<div class="label">
+							<label class="black2" for="i2">
+								Только для создания иконок и логотипов.
+							</label>
+						</div>
+					</li>
+					<li class="flex-row">
+						<div class="input">
+							<input class="check3" type="checkbox" id="i3">
+						</div>
+						<div class="label">
+							<label class="black3" for="i3">
+								Отдельный файл для каждой иконки.
+							</label>
+						</div>
+					</li>
+					<li class="flex-row">
+						<div class="input">
+							<input class="check4" type="checkbox" id="i4">
+						</div>
+						<div class="label">
+							<label class="black4" for="i4">
+								Масштабирование без потери качества при любом разрешении экрана.
+							</label>
+						</div>
+					</li>
+					<li class="flex-row">
+						<div class="input">
+							<input class="check5" type="checkbox" id="i5">
+						</div>
+						<div class="label">
+							<label class="black5" for="i5">
+								Работает в связке с HTML, CSS и JavaScript.
+							</label>
+						</div>
+					</li>
+					<li class="flex-row">
+						<div class="input">
+							<input class="check6" type="checkbox" id="i6">
+						</div>
+						<div class="label">
+							<label class="black6" for="i6">
+								Поддержка популярными браузерами.
+							</label>
+						</div>
+					</li>
+					<li class="flex-row">
+						<div class="input">
+							<input class="check7" type="checkbox" id="i7">
+						</div>
+						<div class="label">
+							<label class="black7" for="i7">
+								Тексты внутри SVG индексируются поисковыми системами.
+							</label>
+						</div>
+					</li>
+				</ul>
+			
+			<div class="message"></div>
+			
+			<ul class="button">
+				<li><button style="margin-right: 30px;" type="button" class="answers">Проверить</button></li>
+				<li><button type="button" class="sbros">Сброс</button></li>
+			</ul>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+<section class="card">
+	<div class="content">
+		<h2>Интерактивный контент для сайта</h2>
+		<div class="important">
+			<div style="background-color: #DEE6E9;"></div>
+			<div class="important-block">
+				<q><i>Интерактивный контент - это контент, с которым пользователь может взаимодействовать</i></q>.
+			</div>
+		</div>
+		
+		<p>Посетитель сайта сам меняет настройки отображения информации и выбирает собственный (персональный) путь изучения материала.</p>
+	
+		<section>
+				<h3 id="comparison">I. Слайдер вида "До / После"</h3>
+				<p style="text-align: center;">Пример отрисовки логотипов по фото с помощью SVG.</p>
+				<div class="video">				
+					<video width="720"  class="video-border" controls loop>
+						<source src="https://itj66.github.io/ITG/des.mp4" type="video/mp4">
+						Ваш браузер не поддерживает видео.
+					</video>
+				</div>
+		</section>
+		<section>
+			<h3 id="dio">II. Гистограммы, графики, круговые диаграммы</h3>
+			<p style="text-align: center;">Интерактивное представление статистических данных.</p>
+			<div class="video">
+				<video width="720"  class="video-border" controls loop>
+					<source src="https://itj66.github.io/ITG/graph.mp4" type="video/mp4">
+					Ваш браузер не поддерживает видео.
+				</video>
+			</div>
+		</section>
+		<section>
+			<h3 id="scheme">III. Блок-схемы (планы и чертежи)</h3>
+			<p style="text-align: center;">Пример визуализации логики, моделирования процесса.</p>
+			<div class="video">
+				<video width="720"  class="video-border" controls loop>
+					<source src="https://itj66.github.io/ITG/scheme.mp4" type="video/mp4">
+					Ваш браузер не поддерживает видео.
+				</video>
+			</div>	
+		</section>
+		<section>
+			<h3 id="practice">IV. Тренажёр для отработки навыка (интерактивные инструкции)</h3>
+			<p style="text-align: center;">Полезные комбинации клавиш, доступные на персональном компьютере.</p>
+			<div class="video">
+				<video width="720"  class="video-border" controls loop>
+					<source src="https://itj66.github.io/ITG/instruction.mp4" type="video/mp4">
+					Ваш браузер не поддерживает видео.
+				</video>
+			</div>
+		</section>
+		<section>
+			<h3 id="map">V. Многослойные карты (атласы)</h3>
+			<p style="text-align: center;">Карта проезда с элементами, точками интереса (POI) и анимацией.</p>
+			<div class="video">
+				<video width="720"  class="video-border" controls loop>
+						<source src="https://itj66.github.io/ITG/map.mp4" type="video/mp4">
+						Ваш браузер не поддерживает видео.
+				</video>
+			</div>
+		</section>
+	</div>
+</section>
+</main>
+<footer class="footer">
+<p>&copy; 2026 Презентация интерактивного контента.</p>
+</footer>
+</div>
+<script src="test.js">
+</script>
+</body>
+</html>
