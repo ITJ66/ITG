@@ -101,7 +101,8 @@ ul li {
 	list-style: none;
 	font-size: 18px;
 	color: #373e45;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 ul:last-child {
