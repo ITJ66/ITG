@@ -341,7 +341,7 @@ summary {
 }	
 
 .video-w {
-	width: 720px;
+	max-width: 720px;
 }
 
 .video-border {
