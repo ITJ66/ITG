@@ -621,9 +621,12 @@ button {
 }
 
 .video {
-	max-width: 400px; 
+	max-width: 320px; 
 }	
 
+.video-w {
+	max-width: 320px;
+}
 }
 
 @media (width: 768px) {
@@ -643,5 +646,14 @@ width: 100%;
 overflow-y: auto;
 overflow-x: hidden;
 }
+
+.video {
+	max-width: 320px; 
+}	
+
+.video-w {
+	max-width: 320px;
+}
+
 }
 
