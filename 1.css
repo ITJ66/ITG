@@ -404,6 +404,10 @@ button:active {
 	font-size: 18px;
 }
 
+.css {
+	margin-top: 10px;
+}
+
 @media (max-width: 824px) {
 	.about {
 	display: grid;
