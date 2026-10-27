@@ -58,7 +58,7 @@ p, ul, ol {
 	z-index: 3;
 	background: radial-gradient(circle,rgba(232, 225, 228, 1) 0%, rgba(255, 255, 255, 1) 47%, rgba(213, 216, 219, 1) 100%);
 	padding: 3px;
-	height: 30px;
+	height: 20px;
 }
 
 
