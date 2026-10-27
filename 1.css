@@ -270,16 +270,23 @@ summary {
         padding-bottom: 15px;
 		}
 		
-legend {
-		text-align: center;
-		color: #373e45;
-	}
-	
+
 .question {
         margin-left: 10px;
         margin-right: 10px;
 		font-size: 18px;
 		}
+    
+.answer {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+		font-size: 16px;
+        padding: 20px;
+        background-color: #e8eff2;
+        border-radius: 10px 10px 10px 10px; 		 
+		}	
+
 	 
 .conteiner-accordeon:last-child {
 		 padding-bottom: 10px;
@@ -292,6 +299,7 @@ legend {
 	font-weight: 550; 
 	margin: 0 auto;
 }
+
 
 .input {
 	display: block; 
