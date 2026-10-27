@@ -58,7 +58,7 @@ p, ul, ol {
 	z-index: 3;
 	background: radial-gradient(circle,rgba(232, 225, 228, 1) 0%, rgba(255, 255, 255, 1) 47%, rgba(213, 216, 219, 1) 100%);
 	padding: 3px;
-	height: 20px;
+	height: 30px;
 }
 
 
@@ -492,6 +492,10 @@ nav li {
 	padding-top: 3px;
 }
 
+.sticky {
+	height: 20px;
+}
+	
 .form {
 	max-width: 460px;
 	padding-left: 10px;
@@ -518,6 +522,10 @@ nav li {
 	padding-top: 3px;
 }
 
+.sticky {
+	height: 20px;
+}
+	
 .form {
 	max-width: 386px;
 	margin-left: 10px;
@@ -550,6 +558,10 @@ h2 {
 	text-align: center;
 }
 
+.sticky {
+	height: 20px;
+}
+	
 .important-block {
 	font-size: 12px;
 }
@@ -664,6 +676,11 @@ overflow-x: hidden;
 .video-w {
 	max-width: 320px;
 }
+
+.sticky {
+	height: 20px;
+}
+	
 .menu {
 	padding-top: 3px;
 }
