@@ -405,6 +405,7 @@ button:active {
 }
 
 .css {
+	display: block;
 	margin-top: 10px;
 }
 
